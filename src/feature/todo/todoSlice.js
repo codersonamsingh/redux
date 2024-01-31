@@ -11,7 +11,8 @@ export const todoSlice = createSlice({
     reducers: {
         addTodo: (state, action) => {
             const todo = {
-                id: 1,text: "Hello world"
+                id: nanoid(),
+                text: "Hello world"
             }
         },
         removeTodo: () => {},
