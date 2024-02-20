@@ -1,5 +1,10 @@
 import React from "react";
+
+
  function AddTodo () {
+     
+    const [input, setInput] = React.useState('')
+
     return (
         <form onSubmit={addTodoHandler} className="space-x-3 mt-12">
         <input
@@ -12,7 +17,10 @@ import React from "react";
         />
         <button
         type="submit"
-        className="text-while bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+        className="text-while bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+            Add Todo
+        </button>
+        </form>
     )
  }
 
