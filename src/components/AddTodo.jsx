@@ -1,9 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 
 
  function AddTodo () {
      
-    const [input, setInput] = React.useState('')
+    const [input, setInput] = useState('')
 
     return (
         <form onSubmit={addTodoHandler} className="space-x-3 mt-12">
