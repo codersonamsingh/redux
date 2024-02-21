@@ -18,7 +18,25 @@ function Todos (){
             <button
             onClick={() =>dispatch(removeTodo(todo.id))}
             className="text-white bg-red-500 border-0 py-1 px-4 focus:outline-none hover:bg-red-600 rounded text-md"
-            ></button>
+            >
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+                >
+                    <path
+                    strokeLinecap="round"
+                    
+                    ></path>
+                </svg>
+
+
+
+
+            </button>
             </li>
         ))}
         
