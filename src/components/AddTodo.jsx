@@ -11,6 +11,7 @@ import { addTodo } from "../feature/todo/todoSlice"
     const addTodoHandler = (e) => {
         e.preventDefault()
         dispatch(addTodo(input))
+        setInput('')
     }
 
     return (
