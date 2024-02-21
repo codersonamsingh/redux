@@ -10,6 +10,11 @@ function Todos (){
     return (
         <>
         <div>Todos</div>
+        {todos.map((todo) => (
+            <li key={todo.id}>
+                {todo.text}
+            </li>
+        ))}
         
         </>
     )
